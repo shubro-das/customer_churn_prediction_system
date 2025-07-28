@@ -1,0 +1,20 @@
+# config.yaml
+
+data:
+  raw_data_dir: "./extracted_data/raw"
+  processed_data_dir: "./extracted_data/processed"
+  train_data_file: "./extracted_data/processed/train.csv"
+  test_data_file: "./extracted_data/processed/test.csv"
+
+artifacts:
+  model_dir: "./artifacts/models"
+  reports_dir: "./artifacts/reports"
+  logs_dir: "./artifacts/logs"
+
+mlflow:
+  experiment_name: "customer_churn_experiment"
+
+deployment:
+  model_path: "./artifacts/models/churn_model.pkl"
+  api_host: "0.0.0.0"
+  api_port: 8000
