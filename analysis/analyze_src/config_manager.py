@@ -20,7 +20,7 @@ class ConfigManager:
         Access nested config values by dot-separated key paths.
         Example: get("data.raw_data_dir")
         """
-        keys = key_path.split(".")
+        keys = key_path.split(".") # Split the key path into individual keys example: ['data', 'raw_data_dir']
         value = self.config
         for key in keys:
             if isinstance(value, dict):

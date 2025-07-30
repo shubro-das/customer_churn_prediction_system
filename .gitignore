@@ -1,1 +1,3 @@
 churn_venv/
+# Ignore local Jupyter kernel
+.jupyter_kernel/
